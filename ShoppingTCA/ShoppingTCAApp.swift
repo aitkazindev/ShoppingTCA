@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+
 @main
 struct ShoppingTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: .init(initialState: CounterDomain.State(), reducer: {
+                CounterDomain()
+            }))
         }
     }
 }

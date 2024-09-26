@@ -11,6 +11,7 @@
 		8FADEC512CA41A7A00EF7E7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FADEC502CA41A7A00EF7E7A /* ContentView.swift */; };
 		8FADEC532CA41A7C00EF7E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FADEC522CA41A7C00EF7E7A /* Assets.xcassets */; };
 		8FADEC562CA41A7C00EF7E7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FADEC552CA41A7C00EF7E7A /* Preview Assets.xcassets */; };
+		8FADEC5E2CA41C3D00EF7E7A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8FADEC5D2CA41C3D00EF7E7A /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FADEC5E2CA41C3D00EF7E7A /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ShoppingTCA;
+			packageProductDependencies = (
+				8FADEC5D2CA41C3D00EF7E7A /* ComposableArchitecture */,
+			);
 			productName = ShoppingTCA;
 			productReference = 8FADEC4B2CA41A7A00EF7E7A /* ShoppingTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 8FADEC422CA41A7A00EF7E7A;
+			packageReferences = (
+				8FADEC5C2CA41C3D00EF7E7A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 8FADEC4C2CA41A7A00EF7E7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FADEC5C2CA41C3D00EF7E7A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FADEC5D2CA41C3D00EF7E7A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FADEC5C2CA41C3D00EF7E7A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FADEC432CA41A7A00EF7E7A /* Project object */;
 }
